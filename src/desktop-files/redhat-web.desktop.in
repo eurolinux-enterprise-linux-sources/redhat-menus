@@ -1,0 +1,11 @@
+[Desktop Entry]
+_Name=Web Browser
+_Comment=Browse the web
+Exec=htmlview %u
+Icon=redhat-web-browser.png
+Terminal=0
+Type=Application
+NoDisplay=true
+Encoding=UTF-8
+Categories=Application;Network;X-Red-Hat-Base;X-Red-Hat-Base-Only;
+StartupNotify=True

@@ -1,0 +1,707 @@
+2008-10-14  Ray Strode  <rstrode@redhat.com>
+
+	* configure.in: Bump version. s/sr@Latn/sr@latin/
+
+2007-10-01  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: Bump version
+
+	* Merge accumulated rawhide patches:
+	- Update preferences.menu for the control center shell
+	- Fix bugzilla information in evolution desktop files
+	- Hide screensavers from menus
+	- Fix categories used in menu files
+
+2007-03-29  Ray Strode <rstrode@redhat.com>
+
+	* configure.in: version 8.9.10
+	* desktop-files/*.desktop: drop a few unused
+	 desktop files
+
+2007-03-29  Ray Strode <rstrode@redhat.com>
+
+	* desktop-files/*.desktop: make sure all desktop files
+	have Encoding=UTF-8 (bug 105796). drop gnome-meeting 
+	desktop file
+
+2007-03-27  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: version 7.8.12
+	* menus/application.menus: Use System-Tools.directory
+	for Applications > System to follow upstream and get
+	a better Echo icon.
+
+2007-03-19  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: version 7.8.11
+	* menus/application.menus:
+	* menus/system-settings.menus: Don't use the invalid
+	Application category anymore
+
+2007-02-23  Matthias Clasen <mclasen@redhat.com>
+
+	* menus/application.menus: Exclude gdmflexiserver-xnest.desktop, too
+
+2007-02-13  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: version 7.8.10
+	* menus/application.menus: Use Education
+
+2006-12-10  Ray Strode  <rstrode@redhat.com>
+
+	* configure.in: version 7.8.9
+
+	* menus/applications.menu: move default merge dirs after
+	rest of menu cruft to be me more extensible for
+	3rd party packagers
+
+	* po/Makefile.in.in:
+	* po/POTFILES.in: update pot file at request of 
+	Kjartan Maraas <kmaraas@broadpark.no>
+
+2006-11-06  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: update ALL_LINGUAS, version 6.7.8
+
+2006-11-01  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: version 6.7.7
+
+	* menus/Makefile.am: 
+	* menus/settings.menu: Add a documentation submenu
+	* menus/documentation.menu: New file
+
+2006-10-31  Than Ngo <than@redhat.com>
+
+	* menus/applications.menu: add missing KDELegacyDirs
+
+2006-08-20  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: version 6.7.6
+
+	* menus/system-settings.menu: Rename to Administration
+	here too, to make menu editors happy
+
+2006-02-09  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: version 6.6.5
+
+	* menus/applications.menu: really move pirut to toplevel.
+
+2006-02-07  Ray Strode <rstrode@redhat.com>
+
+	* configure.in: bump version to 6.6.4
+
+	* desktop-files/Accessories-More.directory.in,
+	  desktop-files/Directory-More.directory.in,
+	  desktop-files/Development-More.directory.in,
+	  desktop-files/Games-More.directory.in,
+	  desktop-files/Graphics-More.directory.in,
+	  desktop-files/Internet-More.directory.in,
+	  desktop-files/Multimedia-More.directory.in,
+	  desktop-files/Office-More.directory.in,
+	  desktop-files/Settings-More.directory.in,
+	  desktop-files/System-More.directory.in:
+	  use upstream icon names
+
+	* menus/applications.menu: remove some brokeness in
+	applications.menu from 6.5.4
+
+2006-02-01  Ray Strode <rstrode@redhat.com>
+
+	* configure.in: bump version to 6.5.4
+
+	* desktop-files/Desktop.directory.in,
+	  desktop-files/Makefile.am: add directory file for
+	  system menu
+
+	* menus/applications.menu: add desktop files to menus
+	for /usr/local installs
+
+	* menus/settings.menu: Use system menu .directory file
+
+	* po/POTFILES.in, po/redhat-menus.pot: add new file to
+	POTFILES
+
+2006-01-30  Ray Strode <rstrode@redhat.com>
+
+	* Makefile.am: distclean out generated intltool files
+
+	* autogen.sh: upgrade autotooling to latest versions.
+	Remove libtool and autoheader
+
+	* configure.in: Bump version to 5.5.5. Prune some
+	commented out lines
+
+	* desktop-files/Accessibility.directory.in,
+	  desktop-files/Applications.directory.in,
+	  desktop-files/Games.directory.in,	
+	  desktop-files/Graphics.directory.in,	
+	  desktop-files/Internet.directory.in,
+	  desktop-files/Multimedia.directory.in,
+	  desktop-files/Office.directory.in,    
+	  desktop-files/Other.directory.in,     
+	  desktop-files/Settings.directory.in,
+	  Makefile.am:	
+	Remove directory files that have upstream equivalents.
+	Get rid of starthere cruft. Remove generated files in
+	distclean
+
+	* po/*.po*, po/POTFILES.in: update translations
+
+2006-01-01  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: Bump version to 5.0.8
+
+	* menus/applications.menu: Don't let monitors show up 
+	in "Other".
+
+2005-11-21  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: Bump version to 5.0.7
+
+	* desktop-files/SystemConfig.directory.in: Rename to
+	"Administration"
+
+	* menus/settings.menu: Add <Layout> to keep preferences 
+	first. 
+
+	* menus/applications.menu: Clean up System Tools, move
+	system-config-packages here from system-settings.menu.
+
+	* menus/system-settings.menu: Add Monitors here, remove
+	system-config-packages 
+
+2005-11-16  Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: Bump version to 5.0.6
+
+	* menu/preferences.menu: Hide gdmphotosetup, userpassword
+	and userinfo by default, since the about me capplet does
+	these things now.
+
+2005-10-25  David Malcolm  <dmalcolm@redhat.com>
+
+	* configure.in: Bump version to 5.0.5
+
+	* desktop-files/redhat-evolution-mail.desktop.in:	
+	* desktop-files/redhat-evolution-calendar.desktop.in: 
+	* desktop-files/redhat-evolution-contacts.desktop.in:
+	* desktop-files/redhat-evolution-tasks.desktop.in:
+	Reword the descriptions in the desktop files; move Tasks and Calendar
+	from Network to Office; fix broken launcher for Calendar.  Use stock
+	icons for calendar, contacts and tasks for now. 
+
+2005-10-28  Matthias Clasen  <mclasen@redhat.com>
+
+	* configure.in: Bump version to 5.0.4
+
+	* menus/applications.menu: Hide usermount by default.
+
+2005-10-25  David Malcolm  <dmalcolm@redhat.com>
+
+	* configure.in: Bump version to 5.0.3
+
+	* desktop-files/Makefile.am: 
+	* po/POTFILES.in:
+	Updated the lists of desktop files here to track the additions and 
+	removal.
+	
+	* desktop-files/redhat-evolution-mail.desktop.in:
+	* desktop-files/redhat-evolution-calendar.desktop.in: 
+	* desktop-files/redhat-evolution-contacts.desktop.in: 
+	* desktop-files/redhat-evolution-tasks.desktop.in:
+	Added new files: separate per-component launchers for Evolution
+	(#170799)
+
+	* desktop-files/redhat-evolution.desktop.in: 
+	Removed this file; it is replaced by the files above
+
+2005-10-21 Matthias Clasen <mclasen@redhat.com>
+
+	* configure.in: Bump version to 5.0.2
+	* menus/applications.menu: Hide gfloppy by default.
+
+2005-09-27 Ray Strode  <rstrode@redhat.com>
+
+	* menus/Makefile.am:
+	* menus/settings.menu:
+	* menus/preferences.menu: merge down stream patch to
+	split out preferences menu.  Don't use preferences-merged
+	dir, it has special significance. 
+
+2005-09-26 Ray Strode  <rstrode@redhat.com>
+	
+	* configure.in: bump version to 5.0.0
+	* desktop-files/openoffice-printeradmin.desktop.in:
+	* desktop-files/redhat-drawing.desktop.in:
+	* desktop-files/redhat-math.desktop.in:
+	change icon names to use .png extension
+
+	* menus/Makefile.am: create merged dirs for packages to
+	override each other in the menus
+
+	* menus/applications.menu: add preferences-merge dir
+	
+	* menus/preferences.menu: control-center capplets are 
+	installed in /usr/share/applications now, kill the cruft
+
+2005-04-14 Ray Strode  <rstrode@redhat.com>
+
+	* menus/applications.menu: Take KDE Legacy menus out of 
+	the applications.menus file
+
+Mon Nov 22 17:56:32 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* desktop-files/redhat-presentations.desktop.in:
+	* desktop-files/redhat-spreadsheet.desktop.in:
+	* desktop-files/redhat-word-processor.desktop.in: Patch from dcbw
+	to add more MIME types.
+
+	* desktop-files/redhat-evolution.desktop.in: Add this file.  I had
+	forgotten to commit it when 1.13 was released.
+
+2004-11-01  Seth Nickell  <seth@gnome.org>
+
+	* desktop-files/redhat-presentations.desktop.in:
+	* desktop-files/redhat-spreadsheet.desktop.in:
+	* desktop-files/redhat-word-processor.desktop.in:
+
+	Patch from Caolan. No idea what it does. Bumped version
+	number to 3.7.
+	
+Fri Oct 22 17:46:46 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* configure.in: Release 1.13.  New Translations and an
+	redhat-evolution.desktop file.
+
+Mon Oct 18 19:47:00 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* configure.in: Released 1.12
+
+Mon Oct 18 16:41:53 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* configure.in: Release 1.11
+
+2004-10-13 Colin Walters  <walters@redhat.com>
+
+	* configure.in: Release 1.10
+
+Wed Oct 13 Ray Strode  <rstrode@redhat.com>
+
+	* desktop-files/gthumb.desktop.in:
+	cvs add file (oops)
+
+2004-10-13 Colin Walters  <walters@redhat.com>
+
+	* desktop-files/redhat-audio-player.desktop.in (MimeType): 
+	Add application/ogg.  Terminate file in newline to pay
+	homage to the Great Emacs Deity.
+
+Wed Sep 29 Ray Strode  <rstrode@redhat.com>
+
+	* desktop-files/gthumb.desktop.in:
+	* desktop-files/Makefile.am:
+	Add gthumb so that it's new menu name can be translated 
+	(bug #131726).
+
+Fri Sep 24 Ray Strode  <rstrode@redhat.com>
+
+	* configure.in:
+	remove AC_PROG_LIBTOOL
+
+Fri Sep 24 Ray Strode  <rstrode@redhat.com>
+
+	* desktop-files/gnome-control-center.desktop.in: 
+	* desktop-files/Makefile.am:
+	* po/POTFILES.in:
+	remove gnome-control-center.desktop (bug #117500)
+
+2004-09-21  Seth Nickell  <seth@gnome.org>
+
+	* configure.in:
+
+	Bump version to 1.6, include a bunch of new languages
+	in configure.in.
+
+Thu Sep  2 18:09:33 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* menus/preferences.menu: remove gnome-control-center.desktop.
+	It's a silly window.
+
+2004-04-15  Seth Nickell  <seth@gnome.org>
+
+	* configure.in:
+	Bump to 1.4
+	
+	* desktop-files/Makefile.am:
+	* desktop-files/Settings-Accessibility.directory.in:
+	* menus/preferences.menu:
+
+	Add an Accessibility submenu to Preferences.
+	
+2004-03-30  Seth Nickell  <seth@gnome.org>
+
+	* configure.in:
+
+	Add languages to ALL_LINGUAS.
+
+2004-03-17	Than Ngo <than@redhat.com>
+	* menus/applications.menu
+
+	make keditmenu working
+
+2004-03-16	Than Ngo <than@redhat.com>
+	* desktop-files/Edutainment.directory.in
+	* desktop-files/Makefile.am
+	* menus/applications.menu
+
+	added Edutainment
+	fix some indentation
+
+2004-03-12	Than Ngo	<than@redhat.com>
+
+	* menus/applications.menu:
+	* menus/kde-settings.menu:
+
+	Remove Applications Catagory
+	get rid of kde-settings.menu, it's now included in KDE
+
+	* desktop-files/KDE-*:
+
+	get rid of KDE directory files, it's now included in KDE
+
+	* menus/Makefile.am
+
+	get rid of kde-settings.menu, it's now included in KDE
+
+	* desktop-files/Makefile.am
+
+	get rid of "KDE-*" entries, it's now included in KDE
+
+	
+2004-03-08  Seth Nickell  <seth@gnome.org>
+
+	* menus/Makefile.am:
+
+	Make distcheck
+	
+	* menus/applications.menu:
+
+	Remove "More ___" sub-menus.
+
+2004-03-03  Alexander Larsson  <alexl@redhat.com>
+
+	* menus/applications.menu:
+	* menus/system-settings.menu:
+	s/redhat-config-/system-config-/
+
+2003-10-03  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: move to 1.0, for new menu spec branch
+
+2003-06-05  Havoc Pennington  <hp@redhat.com>
+
+	* menus/start-here.menu: oops, forgot this one.
+
+2003-06-05  Havoc Pennington  <hp@redhat.com>
+
+	* menus/Makefile.am: get rid of the m4 stuff as we now have
+	<MergeFile>
+
+	* menus/*.menu: convert to new menu specification. (untested)
+
+2003-07-30  Alan Cox
+
+	* configure.in: added cy to ALL_LINGUAS
+
+2003-02-17  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.38
+
+2003-02-12  Jeremy Katz  <katzj@redhat.com>
+
+	* desktop-files/redhat-email.desktop.in: add StartupWMClass (#84140)
+
+2003-02-06  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.37
+
+2003-02-03  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/redhat-web.desktop.in (Exec): hardcode to Mozilla
+	bug #83310; add StartupWMClass=Mozilla
+
+2003-01-29  Havoc Pennington  <hp@redhat.com>
+
+	* menus/applications-submenu.m4: include kde-settings-submenu.m4
+
+	* menus/kde-settings-submenu.m4: new file
+
+2003-01-27  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.35
+
+2003-01-27  Havoc Pennington  <hp@redhat.com>
+
+	* menus/preferences-submenu.m4: include Merged keyword 
+	in "More Preferences"
+
+2003-01-24	Than Ngo	<than@redhat.com>
+
+	* desktop-files/redhat-word-processor.desktop.in: Add mimetype for
+	rtf/msword
+
+2003-01-22  Havoc Pennington  <hp@redhat.com>
+
+	* menus/Makefile.am: set everything up with wacky m4 so that 
+	we don't have any cut and paste
+
+2003-01-22	Than Ngo	<than@redhat.com>
+
+	* menus/Makefile.am: enable start-here.menu again
+
+2003-01-21  Tim Waugh  <twaugh@redhat.com>
+
+	* desktop-files/redhat-word-processor.desktop: Add StartupWMClass.
+	* desktop-files/redhat-math.desktop: Likewise.
+	* desktop-files/redhat-presentations.desktop: Likewise.
+	* desktop-files/redhat-spreadsheet.desktop: Likewise.
+
+2003-01-11  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/Makefile.am (starthere_DATA): don't install a
+	serverconfig.desktop to start-here.
+
+	* menus/Makefile.am: disable start-here.menu, I don't think we're
+	using it right now so it was just confusing.
+	(server-settings.menu): make it just a copy of system-settings.menu
+
+2003-01-09  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/Makefile.am (override_in_files): add
+	redhat-print.desktop.in
+
+	* menus/applications.menu: fix some indentation
+
+2003-01-08  Havoc Pennington  <hp@redhat.com>
+
+	* menus/applications.menu: make server settings a submenu of 
+	System Settings
+
+	* desktop-files/gnome-pilot.desktop.in: rename this
+
+	* configure.in: update ALL_LINGUAS
+
+2003-01-07  Havoc Pennington  <hp@redhat.com>
+
+	* menus/preferences.menu: add "More Preferences"
+
+	* menus/applications.menu: remove redhat-config-services from 
+	system settings, and change "Extras" to Foo/More Foo.
+
+2003-01-07  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/*-More.directory.in: Add a bunch of "More
+	whatever" .directory files
+
+	* desktop-files/redhat-audio-player.desktop.in (Exec): add -e flag
+	to xmms so the files are added to playlist instead of replacing it.
+
+2003-01-07  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/redhat-email.desktop.in (_Name): change to
+	Evolution Email
+
+	* desktop-files/redhat-web.desktop.in (_Name): change to Mozilla
+	Web Browser
+
+2002-12-12  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.29
+
+2002-12-05	Than Ngo <than@redhat.com>
+
+	* menus/applications.menu: Added some new categories for KDE 3.1
+	* desktop-files/KDE-Accessibility.directory: new category
+	* desktop-files/KDE-Components.directory: new category
+	* desktop-files/KDE-Desktop.directory: new category
+	* desktop-files/KDE-Hidden.directory: new category
+	* desktop-files/KDE-Security.directory: new category
+
+2002-09-03  Phil Knirsch <pknirsch@redhat.com>
+
+	* menus/start-here.menu: Fixed corrupt XML nesting for Preferences
+	folder
+
+2002-08-29  Havoc Pennington  <hp@redhat.com>
+
+	* menus/start-here.menu: update
+
+2002-08-27  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/openoffice-setup.desktop.in (Exec): change to
+	/usr/bin/oosetup
+
+	* desktop-files/openoffice-printeradmin.desktop.in (Exec): change
+	executable to /usr/bin/oopadmin
+
+2002-08-21  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.21 with new translations, be sure we
+	s/Advanced/Extras/ in start-here folders
+
+2002-08-16  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.20 with more icons
+
+2002-08-16  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.19 with new icon names and new translations
+
+Thu Aug 15 17:51:05 2002  Jonathan Blandford  <jrb@redhat.com>
+
+	* menus/applications.menu: Move the control-center to Preferences
+
+2002-08-15  Havoc Pennington  <hp@redhat.com>
+
+	* menus/system-settings.menu: this is System Settings not
+	SystemTools bug #71617
+
+2002-08-12  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/gnome-gdmsetup.desktop.in (Categories): add more
+	categories
+
+2002-08-09  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in (GETTEXT_PACKAGE): update ALL_LINGUAS so we
+	actually get translations
+
+        * Add "System Settings" menu
+
+2002-08-07  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.16
+
+	* desktop-files/Makefile.am: Generate links for start-here 
+	based on the .directory files for the menus
+
+2002-08-06  Havoc Pennington  <hp@redhat.com>
+
+	* menus/applications.menu: add subfolders for KDE preferences apps
+
+	* configure.in: 0.14
+
+        * desktop-files/KDE-*: add Type=Directory lines to these files.
+	
+	* desktop-files/Makefile.am (directory_DATA): install the KDE
+	.directory files
+
+2002-08-02  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.12
+
+	* menus/server-settings.menu, menus/system-settings.menu:
+	add server and system settings
+
+2002-08-01  Havoc Pennington  <hp@redhat.com>
+
+	* ".org"-ify the OpenOffice stuff. blah
+
+2002-07-31  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/Makefile.am (override_in_files): add
+	redhat-audio-player.desktop.in
+
+2002-07-31  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.10
+
+	* menus/preferences.menu: add an Advanced folder
+
+	* menus/applications.menu: change All Applications to Extras 
+	and exclude things already found in base
+
+	* desktop-files/Makefile.am (directory_in_files): add
+	Extras.directory.in
+
+2002-07-30  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/Makefile.am (override_in_files): add
+	gnome-gdmsetup.desktop.in
+
+2002-07-29  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/Makefile.am (override_in_files):
+	redhat-diagrams.desktop.in
+
+2002-07-24  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.7
+
+	* menus/applications.menu: put in the Documentation subfolder
+
+2002-07-24  Havoc Pennington  <hp@redhat.com>
+	
+	* menus/applications.menu: exclude Base-Only from All Applications
+	
+2002-07-24  Havoc Pennington  <hp@redhat.com>
+
+	* configure.in: 0.6
+
+2002-07-23  Havoc Pennington  <hp@redhat.com>
+
+	* menus/applications.menu: put control center in the root 
+	menu
+
+	* menus/preferences.menu: only include X-Red-Hat-Base
+
+2002-07-23  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/Makefile.am (override_in_files): add
+	gnome-control-center.desktop.in
+	(override_in_files): spreadsheet wasn't in makefile
+
+	* menus/applications.menu: add X-Red-Hat-Base to the queries
+
+	* desktop-files/redhat-spreadsheet.desktop.in (Categories): fix
+
+	* desktop-files/Settings.directory.in (Name): mumble, edit the
+	right file
+
+2002-07-23  Havoc Pennington  <hp@redhat.com>
+
+	* desktop-files/openoffice-setup.desktop.in (Categories): fix
+
+	* desktop-files/redhat-word-processor.desktop.in (Categories): fix
+
+	* desktop-files/redhat-web.desktop.in (Categories): fix
+
+	* desktop-files/redhat-presentations.desktop.in (Categories): fix
+
+	* desktop-files/redhat-math.desktop.in (Categories): fix
+
+	* desktop-files/redhat-email.desktop.in (Categories): fix
+
+	* menus/applications.menu: remove all the special-case hacks
+
+	* desktop-files/Settings.directory (Comment): just Preferences not
+	Desktop Preferences, we're mixing in non-desktop stuff.
+
+2002-07-23  Alexander Larsson  <alexl@redhat.com>
+
+	* desktop-files/Makefile.am (override_in_files):
+	Add redhat-gnomemeeting.desktop.in
+
+	* desktop-files/redhat-gnomemeeting.desktop.in:
+	New fiile
+
+2002-06-24  Havoc Pennington  <hp@redhat.com>
+
+	* menus/applications.menu: lots of hacking
+
+	* desktop-files/AllPrograms.directory.in: new file
+
+	* menus/Makefile.am (menu_DATA): add a preferences.menu
+
