@@ -3,7 +3,7 @@
 Summary: Configuration and data files for the desktop menus
 Name: redhat-menus
 Version: 12.0.2
-Release: 6%{?dist}
+Release: 7%{?dist}
 URL: http://www.redhat.com
 #FIXME-> There is no hosting website for this project.
 Source0: %{name}-%{version}.tar.gz
@@ -53,6 +53,9 @@ update-desktop-database &> /dev/null || :
 %{_datadir}/desktop-directories/*.directory
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 12.0.2-7
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 12.0.2-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
