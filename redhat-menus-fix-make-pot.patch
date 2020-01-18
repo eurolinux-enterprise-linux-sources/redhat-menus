@@ -1,0 +1,11 @@
+diff -up redhat-menus-12.0.2/po/POTFILES.in.fix-make-pot redhat-menus-12.0.2/po/POTFILES.in
+--- redhat-menus-12.0.2/po/POTFILES.in.fix-make-pot	2016-03-15 16:36:26.277008011 -0400
++++ redhat-menus-12.0.2/po/POTFILES.in	2016-03-15 16:36:34.586117188 -0400
+@@ -39,7 +39,6 @@ desktop-files/ServerConfig-More.director
+ desktop-files/Settings-More.directory.in
+ desktop-files/SystemConfig.directory.in
+ desktop-files/SystemConfig-More.directory.in
+-desktop-files/System.directory.in
+ desktop-files/System-More.directory.in
+ desktop-files/Utilities.directory.in
+ desktop-files/Utilities-More.directory.in

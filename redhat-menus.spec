@@ -3,10 +3,12 @@
 Summary: Configuration and data files for the desktop menus
 Name: redhat-menus
 Version: 12.0.2
-Release: 7%{?dist}
+Release: 8%{?dist}
 URL: http://www.redhat.com
 #FIXME-> There is no hosting website for this project.
 Source0: %{name}-%{version}.tar.gz
+
+Patch0: redhat-menus-fix-make-pot.patch
 License: GPL+
 Group: User Interface/Desktops
 BuildArch: noarch
@@ -20,6 +22,7 @@ of "subdirectories" in the menus.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
@@ -53,6 +56,10 @@ update-desktop-database &> /dev/null || :
 %{_datadir}/desktop-directories/*.directory
 
 %changelog
+* Tue Mar 15 2016 Matthias Clasen <mclasen@redhat.com> - 12.0.2-8
+- Fix make pot
+Resolves: #1311003
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 12.0.2-7
 - Mass rebuild 2013-12-27
 
