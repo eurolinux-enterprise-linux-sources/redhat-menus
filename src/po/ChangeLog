@@ -1,0 +1,114 @@
+Thu Mar 29 2007  Ray Strode  <rstrode@redhat.com>
+
+	* POTFILES.in: get rid of a few more unused
+	files
+
+Thu Mar 29 2007  Ray Strode  <rstrode@redhat.com>
+	
+	* redhat-menus.pot: run make update-po
+	* POTFILES.in: get rid of gnomemeeting
+
+Sun Nov 19 2006  Matthias Clasen  <mclasen@redhat.com>
+	
+	* redhat-menus.pot: Update
+
+Mon Oct 18 19:44:59 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* *.po: Changed a string in redhat-email.desktop.  I updated the
+	translations as well; hopefully correctly.
+
+Mon Oct 18 16:35:45 2004  Jonathan Blandford  <jrb@redhat.com>
+
+	* *.po: Changed two strings in redhat-web.  As it's close to a
+	release, I sucked the translation strings from Epiphany.  I had to
+	update is and fr by hand as well.
+
+2004-09-21  Seth Nickell  <seth@gnome.org>
+
+	reviewed by: <delete if not using a buddy>
+
+	* ar.po:
+	* bg.po:
+	* cy.po:
+	* da.po:
+	* el.po:
+	* es.po:
+	* et.po:
+	* fa.po:
+	* fr.po:
+	* gu.po:
+	* hi.po:
+	* hu.po:
+	* id.po:
+	* it.po:
+	* ko.po:
+	* lt.po:
+	* mk.po:
+	* ms.po:
+	* nb.po:
+	* no.po:
+	* pa.po:
+	* pt_BR.po:
+	* ru.po:
+	* sl.po:
+	* sq.po:
+	* sv.po:
+	* ta.po:
+	* th.po:
+	* zh_CN.po:
+	* zh_TW.po:
+
+2004-04-15  Seth Nickell  <seth@gnome.org>
+
+	reviewed by: <delete if not using a buddy>
+
+	* ar.po:
+	* ko.po:
+
+2004-03-30  Seth Nickell  <seth@gnome.org>
+
+	reviewed by: <delete if not using a buddy>
+
+	* ar.po:
+	* bn.po:
+	* et.po:
+	* fa.po:
+	* fi.po:
+	* hi.po:
+	* hr.po:
+	* hu.po:
+	* pa.po:
+	* pl.po:
+	* sk.po:
+	* ta.po:
+	* zu.po:
+
+2004-03-08  Seth Nickell  <seth@gnome.org>
+
+	reviewed by: <delete if not using a buddy>
+
+	* cy.po:
+	* de.po:
+	* el.po:
+	* fr.po:
+	* ms.po:
+	* pt_BR.po:
+	* tr.po:
+	* zh_CN.po:
+
+2003-07-30  Alan Cox   <alan@redhat.com>
+
+	* Add cy.po from Chris Jackson
+
+2003-01-21  Havoc Pennington  <hp@redhat.com>
+
+	* POTFILES.in: fix from Kjartan
+
+2002-07-31  Havoc Pennington  <hp@redhat.com>
+
+	* POTFILES.in: update
+
+2002-07-23  Havoc Pennington  <hp@redhat.com>
+
+	* POTFILES.in: update
+
